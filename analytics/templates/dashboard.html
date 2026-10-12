@@ -1,0 +1,331 @@
+{% extends "base.html" %}
+{% block title %}APEX — Intelligence Hub{% endblock %}
+
+{% block head_extra %}
+<style>
+  .layout { display: grid; grid-template-columns: 250px 1fr; gap: 1rem; padding: 1rem 1.5rem 2rem; align-items: start; }
+  .layout > main, .grid > *, .tm-card, .bx-card { min-width: 0; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; }
+  .panel h2 { margin: 0 0 .2rem; font-size: 1rem; }
+  .panel .sub { margin: 0 0 .8rem; font-size: .68rem; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+  .step { display: inline-block; font-size: .58rem; letter-spacing: .12em; color: var(--peach); margin-bottom: .25rem; }
+  .chart-box { position: relative; }
+
+  .sidebar h3 { margin: 0 0 .7rem; font-size: .65rem; letter-spacing: .1em; color: var(--muted); }
+  .legend { list-style: none; margin: 0 0 1rem; padding: 0; font-size: .78rem; }
+  .legend li { display: flex; align-items: center; gap: .55rem; margin-bottom: .55rem; }
+  .legend i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .tag { font-size: .58rem; background: #3a2f12; color: #ffd57a; border-radius: 4px; padding: .1rem .35rem; letter-spacing: .04em; }
+  .kpi { border: 1px solid var(--line); border-radius: 8px; padding: .7rem .8rem; margin-top: .7rem; }
+  .kpi small { display: block; font-size: .58rem; letter-spacing: .1em; color: var(--peach); }
+  .kpi strong { display: block; font-size: 1.15rem; margin-top: .25rem; }
+  .kpi span { font-size: .68rem; color: var(--muted); }
+
+  .hero h1 { margin: 0 0 .5rem; font-size: 1.35rem; }
+  .hero p { margin: 0 0 .9rem; font-size: .85rem; line-height: 1.55; color: #c3c9d4; max-width: 70ch; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+  .steps li { border: 1px solid var(--line); border-radius: 8px; padding: .6rem .7rem; font-size: .75rem; }
+  .steps b { display: block; color: var(--peach); margin-bottom: .15rem; }
+  .steps span { color: var(--muted); }
+
+  .guide { margin: .9rem 0 0; padding-top: .8rem; border-top: 1px solid var(--line); font-size: .74rem; line-height: 1.5; }
+  .guide dt { font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--peach); margin-top: .5rem; }
+  .guide dd { margin: .1rem 0 0; color: #c3c9d4; }
+
+  .tm-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; }
+  .tm-card h4 { margin: 0 0 .1rem; font-size: .62rem; line-height: 1.25; }
+  .tm-card p { margin: 0 0 .4rem; font-size: .58rem; color: var(--muted); }
+  .tm-card .chart-box { height: 330px; }
+  .bx-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+  .bx-card h4 { margin: 0; font-size: .7rem; }
+  .bx-card p { margin: 0 0 .4rem; font-size: .6rem; color: var(--muted); }
+  .bx-card .chart-box { height: 200px; }
+
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 960px) { .layout { grid-template-columns: 1fr; } }
+  @media (max-width: 800px) { .steps { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .tm-row, .bx-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="layout">
+  <aside class="sidebar panel">
+    <h3>DISCIPLINAS ANALIZADAS</h3>
+    <ul class="legend">
+      {% for d in disciplines %}
+        <li><i style="background: {{ d.accent_color }}"></i>{{ d.name }}
+          {% if d.is_preliminary %}<span class="tag">PRELIMINAR</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% if top_prize %}
+    <div class="kpi">
+      <small>MAYOR CRECIMIENTO DE PREMIO</small>
+      <strong>+{{ top_prize.pct_change|floatformat:0 }}%</strong>
+      <span>{{ top_prize.discipline.name }}</span>
+    </div>
+    {% endif %}
+    {% if in_contraction %}
+    <div class="kpi">
+      <small>ÚNICA EN CONTRACCIÓN</small>
+      <strong>{{ in_contraction|join:", " }}</strong>
+      <span>premio, participantes y duración a la baja</span>
+    </div>
+    {% endif %}
+  </aside>
+
+  <main>
+    <section class="panel hero">
+      <h1>¿En qué ecosistema conviene invertir?</h1>
+      <p>APEX compara cuatro ecosistemas competitivos —<b>FIFA World Cup</b>, <b>LoL Worlds</b>,
+        <b>CS2/CS:GO Majors</b> y <b>StarCraft II</b>— con datos históricos públicos, para ayudar a un manager
+        o inversionista a elegir dónde formar su próximo equipo. Recorre los gráficos para ver
+        qué tan rápido crece cada uno (<b>oportunidad</b>) y qué tan estable es (<b>riesgo</b>).</p>
+      <ol class="steps">
+        <li><b>1 · Crecimiento</b><span>¿Qué tan rápido se expande cada uno?</span></li>
+        <li><b>2 · Riesgo</b><span>¿Quién domina los títulos?</span></li>
+        <li><b>3 · Madurez</b><span>¿Qué tan parejo y predecible es el juego?</span></li>
+      </ol>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <span class="step">1 · CRECIMIENTO</span>
+        <h2>¿Cuánto ha crecido cada torneo?</h2>
+        <p class="sub">Heatmap · % de variación desde el primer registro disponible</p>
+        <div class="chart-box" style="height:340px"><canvas id="heatmapChart"></canvas></div>
+        <dl class="guide">
+          <dt>Cómo leerlo</dt><dd>Cada fila es un torneo y cada celda cuánto creció esa métrica (%). Más intenso = más crecimiento; azul = caída.</dd>
+          <dt>Qué encontramos</dt><dd>LoL lidera en premio (+4,976%), CS2 en duración (+567%) y FIFA en equipos (+269%). StarCraft II cae en las tres.</dd>
+          <dt>Para el inversionista</dt><dd>Mucho crecimiento indica oportunidad, aunque sobre una base pequeña. Una caída sostenida es una señal de alerta.</dd>
+        </dl>
+      </section>
+      <section class="panel">
+        <span class="step">1 · CRECIMIENTO</span>
+        <h2>¿Quién crece más rápido, en términos relativos?</h2>
+        <p class="sub">Radar · normalizado 0–100 (100 = mayor tasa entre las 4)</p>
+        <div class="chart-box" style="height:340px"><canvas id="radarChart"></canvas></div>
+        <dl class="guide">
+          <dt>Cómo leerlo</dt><dd>Cada vértice es una dimensión (equipos, premio, duración). Cuanto más área cubre un torneo, más rápido crece frente a los demás.</dd>
+          <dt>Qué encontramos</dt><dd>LoL lidera en premio y duración, FIFA en equipos y CS2 crece de forma moderada. StarCraft II queda cerca de cero.</dd>
+          <dt>Para el inversionista</dt><dd>Permite comparar fútbol y esports sin que las magnitudes absolutas distorsionen: mide velocidad, no tamaño.</dd>
+        </dl>
+      </section>
+    </div>
+
+    <div class="grid">
+      <section class="panel">
+        <span class="step">2 · RIESGO</span>
+        <h2>¿Qué tan concentrado está el poder?</h2>
+        <p class="sub">Treemap · % de títulos por región / país</p>
+        <div class="tm-row" id="treemapContainer"></div>
+        <dl class="guide">
+          <dt>Cómo leerlo</dt><dd>Cada recuadro es una región y su tamaño es la cantidad de títulos que ganó.</dd>
+          <dt>Qué encontramos</dt><dd>SC2: Corea 88%. LoL: Corea 67%. CS2: Europa 59%. FIFA es el más repartido: Europa 55% y Sudamérica 45%.</dd>
+          <dt>Para el inversionista</dt><dd>Un ecosistema dominado por una región es más impredecible para un nuevo entrante: más concentración, más riesgo.</dd>
+        </dl>
+      </section>
+      <section class="panel">
+        <span class="step">3 · MADUREZ</span>
+        <h2>¿Qué tan parejos son los resultados?</h2>
+        <p class="sub">Boxplot · dispersión de goles / márgenes por era</p>
+        <div class="bx-grid" id="boxplotContainer"></div>
+        <dl class="guide">
+          <dt>Cómo leerlo</dt><dd>La caja agrupa el 50% central de los valores, la línea interior es la mediana y los puntos son casos atípicos. Cajas bajas y angostas = resultados más predecibles. En fútbol se miden goles; en esports, diferencia de mapas (no son comparables entre sí, solo su tendencia).</dd>
+          <dt>Qué encontramos</dt><dd>En FIFA la mediana de goles bajó de 5–6 (años 30–50) a 2–3: señal de profesionalización. LoL, CS2 y SC2 no muestran una tendencia clara.</dd>
+          <dt>Para el inversionista</dt><dd>Un nivel de juego más parejo indica un ecosistema más maduro y predecible.</dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block body_extra %}
+<script>
+Chart.defaults.color = "#aab2c0";
+Chart.defaults.borderColor = "rgba(255,255,255,0.08)";
+Chart.defaults.font.size = 11;
+
+const DARK_TEXT = "#14171c";
+
+// Aclara un color hex: t = 1 lo deja igual, t = 0 lo vuelve blanco
+function tint(hex, t) {
+  const n = parseInt(hex.slice(1), 16);
+  const mix = c => Math.round(255 - (255 - c) * t);
+  return `rgb(${mix(n >> 16)},${mix((n >> 8) & 255)},${mix(n & 255)})`;
+}
+
+// Chart.js dibuja un arreglo de strings como texto en varias líneas
+function splitInTwo(text) {
+  const words = text.split(" ");
+  const half = Math.ceil(words.length / 2);
+  return [words.slice(0, half).join(" "), words.slice(half).join(" ")];
+}
+
+function formatPct(v) {
+  return (v > 0 ? "+" : "−") + Math.abs(Math.round(v)).toLocaleString("en-US") + "%";
+}
+
+// Crea la tarjeta (título, subtítulo y canvas) de los gráficos que van uno por disciplina
+function addCard(container, className, title, subtitle) {
+  const card = document.createElement("div");
+  card.className = className;
+  card.innerHTML = `<h4>${title}</h4><p>${subtitle}</p><div class="chart-box"><canvas></canvas></div>`;
+  container.appendChild(card);
+  return card.querySelector("canvas");
+}
+
+fetch("{% url 'radar_data' %}")
+  .then(r => r.json())
+  .then(data => {
+    new Chart(document.getElementById("radarChart"), {
+      type: "radar",
+      data,
+      options: {
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            min: 0, max: 100,
+            ticks: { stepSize: 50, backdropColor: "transparent" },
+            grid: { color: "rgba(255,255,255,0.12)" },
+            angleLines: { color: "rgba(255,255,255,0.12)" },
+          },
+        },
+        plugins: { legend: { position: "bottom", labels: { usePointStyle: true } } },
+      },
+    });
+  });
+
+// Escala logarítmica para la intensidad: con una lineal, el +4976% de LoL deja todo lo demás pálido
+function heatColor(cell) {
+  if (cell.v < 0) return tint(cell.color, 0.3 + 0.2 * Math.min(-cell.v / 100, 1));
+  return tint(cell.color, 0.3 + 0.7 * Math.min(Math.log10(cell.v + 1) / Math.log10(5000), 1));
+}
+
+const cellLabels = {
+  id: "cellLabels",
+  afterDatasetsDraw(chart) {
+    const ctx = chart.ctx;
+    const cells = chart.data.datasets[0].data;
+    chart.getDatasetMeta(0).data.forEach((el, i) => {
+      const {x, y, width, height} = el.getProps(["x", "y", "width", "height"]);
+      ctx.save();
+      ctx.fillStyle = DARK_TEXT;
+      ctx.font = "bold 14px sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(formatPct(cells[i].v), x + width / 2, y + height / 2);
+      ctx.restore();
+    });
+  },
+};
+
+fetch("{% url 'heatmap_data' %}")
+  .then(r => r.json())
+  .then(res => {
+    const cols = res.x_labels.length;
+    const rows = res.y_labels.length;
+    new Chart(document.getElementById("heatmapChart"), {
+      type: "matrix",
+      data: {
+        datasets: [{
+          data: res.data,
+          backgroundColor: c => heatColor(c.dataset.data[c.dataIndex]),
+          borderWidth: 0,
+          width: ({chart}) => (chart.chartArea || {}).width / cols - 6,
+          height: ({chart}) => (chart.chartArea || {}).height / rows - 6,
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { enabled: false } },
+        scales: {
+          x: {
+            type: "category", labels: res.x_labels, position: "top", offset: true,
+            grid: { display: false },
+            ticks: {
+              color: "#e8ebf0", font: { weight: "bold" }, maxRotation: 0, autoSkip: false,
+              callback: (_, i) => splitInTwo(res.x_labels[i]),
+            },
+          },
+          y: {
+            // el plugin matrix invierte el eje Y por defecto; así LoL queda arriba como en la presentación
+            type: "category", labels: res.y_labels, offset: true, reverse: false,
+            grid: { display: false },
+            ticks: { font: { size: 10 } },
+          },
+        },
+      },
+      plugins: [cellLabels],
+    });
+  });
+
+fetch("{% url 'treemap_data' %}")
+  .then(r => r.json())
+  .then(res => {
+    const container = document.getElementById("treemapContainer");
+    Object.values(res).forEach(d => {
+      const total = d.tree.reduce((sum, t) => sum + t.value, 0);
+      const byRegion = Object.fromEntries(d.tree.map(t => [t.region, t]));
+      const canvas = addCard(container, "tm-card", d.title, `${d.subtitle}, n=${d.n}`);
+
+      new Chart(canvas, {
+        type: "treemap",
+        data: {
+          datasets: [{
+            tree: d.tree,
+            key: "value",
+            groups: ["region"],
+            // la región con más títulos va con el color más intenso
+            backgroundColor: c => tint(d.color, 0.4 + 0.6 * ((c.raw && c.raw.v) || 0) / total),
+            borderColor: "#161b24",
+            borderWidth: 2,
+            labels: {
+              display: true,
+              color: DARK_TEXT,
+              font: { weight: "bold", size: 10 },
+              formatter: c => {
+                const t = byRegion[c.raw.g];
+                return [c.raw.g, `${t.value} (${Math.round(t.pct)}%)`];
+              },
+            },
+          }],
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { enabled: false } },
+        },
+      });
+    });
+  });
+
+fetch("{% url 'boxplot_data' %}")
+  .then(r => r.json())
+  .then(res => {
+    const container = document.getElementById("boxplotContainer");
+    Object.values(res).forEach(d => {
+      new Chart(addCard(container, "bx-card", d.title, d.subtitle), {
+        type: "boxplot",
+        data: {
+          labels: d.labels,
+          datasets: [{
+            data: d.data,
+            backgroundColor: d.color,
+            borderColor: "#e8ebf0",
+            medianColor: "#0f131a",
+            outlierBackgroundColor: d.color,
+            borderWidth: 1.5,
+          }],
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, title: { display: true, text: d.y_label, font: { size: 9 } } } },
+        },
+      });
+    });
+  });
+</script>
+{% endblock %}

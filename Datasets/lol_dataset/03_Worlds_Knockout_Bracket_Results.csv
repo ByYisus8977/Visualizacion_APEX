@@ -1,0 +1,73 @@
+Year,Round,Team_1,Team_2,Score,Winner,Notes
+2011,Semifinal,Team SoloMid,against All Authority,1-2,against All Authority,Double-elimination upper bracket
+2011,Semifinal,Epik Gaming,Fnatic,0-2,Fnatic,Double-elimination upper bracket
+2011,Upper Final,Fnatic,against All Authority,2-1,Fnatic,Winner advances directly to Grand Final
+2011,Lower Bracket Final,against All Authority,Team SoloMid,2-0,against All Authority,Loser (TSM) finishes 3rd
+2011,Grand Final,Fnatic,against All Authority,2-1,Fnatic,Bo3 final
+2012,Quarterfinal,Moscow Five,Invictus Gaming,2-0,Moscow Five,
+2012,Quarterfinal,Taipei Assassins,NaJin Sword,2-0,Taipei Assassins,
+2012,Quarterfinal,Team SoloMid,Azubu Frost,0-2,Azubu Frost,
+2012,Quarterfinal,Team WE,CLG Europe,1-2,CLG Europe,
+2012,Semifinal,Moscow Five,Taipei Assassins,1-2,Taipei Assassins,
+2012,Semifinal,Azubu Frost,CLG Europe,2-1,Azubu Frost,
+2012,Grand Final,Taipei Assassins,Azubu Frost,3-1,Taipei Assassins,Bo5 final
+2013,Quarterfinal,Gamania Bears,SK Telecom T1 K,0-2,SK Telecom T1 K,
+2013,Quarterfinal,NaJin Black Sword,Gambit Gaming,2-1,NaJin Black Sword,
+2013,Quarterfinal,Royal Club,Oh My God,2-0,Royal Club,
+2013,Quarterfinal,Cloud9,Fnatic,1-2,Fnatic,
+2013,Semifinal,SK Telecom T1 K,NaJin Black Sword,3-2,SK Telecom T1 K,
+2013,Semifinal,Royal Club,Fnatic,3-1,Royal Club,
+2013,Grand Final,SK Telecom T1 K,Royal Club,3-0,SK Telecom T1 K,Bo5 final
+2014,Quarterfinal,Team SoloMid,Samsung Galaxy White,1-3,Samsung Galaxy White,
+2014,Quarterfinal,Cloud9,Samsung Galaxy Blue,1-3,Samsung Galaxy Blue,
+2014,Quarterfinal,Star Horn Royal Club,EDward Gaming,3-2,Star Horn Royal Club,
+2014,Quarterfinal,NaJin White Shield,OMG,0-3,OMG,
+2014,Semifinal,Samsung Galaxy White,Samsung Galaxy Blue,3-0,Samsung Galaxy White,All-Samsung semifinal
+2014,Semifinal,Star Horn Royal Club,OMG,3-2,Star Horn Royal Club,
+2014,Grand Final,Samsung White,Star Horn Royal Club,3-1,Samsung White,Bo5 final
+2016,Quarterfinal,SK Telecom T1,Royal Never Give Up,3-1,SK Telecom T1,
+2016,Quarterfinal,ROX Tigers,EDward Gaming,3-1,ROX Tigers,
+2016,Quarterfinal,H2K-Gaming,Albus NoX Luna,3-0,H2K-Gaming,
+2016,Quarterfinal,Samsung Galaxy,Cloud9,3-0,Samsung Galaxy,
+2016,Semifinal,SK Telecom T1,ROX Tigers,3-2,SK Telecom T1,Regarded as one of the greatest Bo5s in LoL history
+2016,Semifinal,H2K-Gaming,Samsung Galaxy,0-3,Samsung Galaxy,
+2016,Grand Final,SK Telecom T1,Samsung Galaxy,3-2,SK Telecom T1,Bo5 final; first Worlds final to go 5 games
+2017,Quarterfinal,SK Telecom T1,Misfits Gaming,3-2,SK Telecom T1,
+2017,Quarterfinal,Royal Never Give Up,Fnatic,3-1,Royal Never Give Up,
+2017,Quarterfinal,Longzhu Gaming,Samsung Galaxy,0-3,Samsung Galaxy,
+2017,Quarterfinal,Team WE,Cloud9,3-2,Team WE,
+2017,Semifinal,SK Telecom T1,Royal Never Give Up,3-2,SK Telecom T1,
+2017,Semifinal,Team WE,Samsung Galaxy,1-3,Samsung Galaxy,
+2017,Grand Final,Samsung Galaxy,SK Telecom T1,3-0,Samsung Galaxy,Bo5 final
+2018,Quarterfinal,KT Rolster,Invictus Gaming,2-3,Invictus Gaming,
+2018,Quarterfinal,Royal Never Give Up,G2 Esports,2-3,G2 Esports,
+2018,Quarterfinal,Afreeca Freecs,Cloud9,0-3,Cloud9,
+2018,Quarterfinal,Fnatic,EDward Gaming,3-1,Fnatic,
+2018,Semifinal,Invictus Gaming,G2 Esports,3-0,Invictus Gaming,
+2018,Semifinal,Cloud9,Fnatic,0-3,Fnatic,
+2018,Grand Final,Invictus Gaming,Fnatic,3-0,Invictus Gaming,Bo5 final; fastest Worlds final in history (85 min)
+2019,Quarterfinal,Griffin,Invictus Gaming,1-3,Invictus Gaming,
+2019,Quarterfinal,FunPlus Phoenix,Fnatic,3-1,FunPlus Phoenix,
+2019,Quarterfinal,SK Telecom T1,Splyce,3-1,SK Telecom T1,
+2019,Quarterfinal,Damwon Gaming,G2 Esports,1-3,G2 Esports,
+2019,Semifinal,Invictus Gaming,FunPlus Phoenix,1-3,FunPlus Phoenix,
+2019,Semifinal,G2 Esports,SK Telecom T1,3-1,G2 Esports,
+2019,Grand Final,FunPlus Phoenix,G2 Esports,3-0,FunPlus Phoenix,Bo5 final
+2020,Semifinal,DAMWON Gaming,G2 Esports,3-1,DAMWON Gaming,Full quarterfinal data not compiled
+2020,Semifinal,Suning,Top Esports,3-1,Suning,LPL all-Chinese semifinal
+2020,Grand Final,DAMWON Gaming,Suning,3-1,DAMWON Gaming,Bo5 final
+2021,Semifinal,DWG KIA,T1,3-2,DWG KIA,Full quarterfinal data not compiled
+2021,Semifinal,EDward Gaming,Gen.G,3-2,EDward Gaming,EDG's first-ever Worlds semifinal appearance
+2021,Grand Final,EDward Gaming,DWG KIA,3-2,EDward Gaming,Bo5 final; first Worlds final with no live audience (COVID-19)
+2022,Semifinal,T1,JD Gaming,3-1,T1,Full quarterfinal data not compiled
+2022,Semifinal,DRX,Gen.G,3-2,DRX,DRX reverse-swept reigning champions EDG in QF
+2022,Grand Final,DRX,T1,3-2,DRX,Bo5 final; first Play-In team to reach and win a Worlds final
+2023,Semifinal,T1,JD Gaming,3-1,T1,Full quarterfinal data not compiled
+2023,Semifinal,Weibo Gaming,Bilibili Gaming,3-2,Weibo Gaming,
+2023,Grand Final,T1,Weibo Gaming,3-0,T1,Bo5 final
+2024,Semifinal,T1,Gen.G,3-1,T1,Full quarterfinal data not compiled
+2024,Semifinal,Bilibili Gaming,Weibo Gaming,3-2,Bilibili Gaming,"Rematch of 2023 semifinal, same result"
+2024,Grand Final,T1,Bilibili Gaming,3-2,T1,Bo5 final
+2025,Semifinal,T1,Top Esports,3-0,T1,Full quarterfinal data not compiled
+2025,Semifinal,KT Rolster,Gen.G Esports,3-1,KT Rolster,
+2025,Grand Final,T1,KT Rolster,3-2,T1,Bo5 final; T1's third consecutive title ("three-peat")

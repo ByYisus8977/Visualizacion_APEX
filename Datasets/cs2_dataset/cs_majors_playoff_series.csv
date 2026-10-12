@@ -1,0 +1,169 @@
+year,edition,game,round,team_a,score_a,team_b,score_b,margin,prize_pool_usd,teams_in_event
+2013,Jonkoping 2013,CS:GO,Quarterfinal,LGB eSports,1,Ninjas in Pyjamas,2,1,250000,16
+2013,Jonkoping 2013,CS:GO,Quarterfinal,VeryGames,2,Copenhagen Wolves,1,1,250000,16
+2013,Jonkoping 2013,CS:GO,Quarterfinal,Fnatic,2,Recursive eSports,1,1,250000,16
+2013,Jonkoping 2013,CS:GO,Quarterfinal,compLexity Gaming,2,Astana Dragons,1,1,250000,16
+2013,Jonkoping 2013,CS:GO,Semifinal,Ninjas in Pyjamas,2,VeryGames,1,1,250000,16
+2013,Jonkoping 2013,CS:GO,Semifinal,Fnatic,2,compLexity Gaming,0,2,250000,16
+2013,Jonkoping 2013,CS:GO,Final,Fnatic,2,Ninjas in Pyjamas,1,1,250000,16
+2014,Katowice 2014,CS:GO,Quarterfinal,Ninjas in Pyjamas,2,compLexity Gaming,1,1,250000,16
+2014,Katowice 2014,CS:GO,Quarterfinal,Team Dignitas,2,HellRaisers,0,2,250000,16
+2014,Katowice 2014,CS:GO,Quarterfinal,Virtus.pro,2,Team LDLC.com,0,2,250000,16
+2014,Katowice 2014,CS:GO,Quarterfinal,LGB eSports,2,Fnatic,1,1,250000,16
+2014,Katowice 2014,CS:GO,Semifinal,Ninjas in Pyjamas,2,Team Dignitas,0,2,250000,16
+2014,Katowice 2014,CS:GO,Semifinal,Virtus.pro,2,LGB eSports,1,1,250000,16
+2014,Katowice 2014,CS:GO,Final,Virtus.pro,2,Ninjas in Pyjamas,0,2,250000,16
+2014,Cologne 2014,CS:GO,Quarterfinal,Fnatic,2,Natus Vincere,1,1,250000,16
+2014,Cologne 2014,CS:GO,Quarterfinal,Team Dignitas,2,Epsilon eSports,0,2,250000,16
+2014,Cologne 2014,CS:GO,Quarterfinal,Team LDLC.com,2,Virtus.pro,0,2,250000,16
+2014,Cologne 2014,CS:GO,Quarterfinal,Ninjas in Pyjamas,2,Cloud9,1,1,250000,16
+2014,Cologne 2014,CS:GO,Semifinal,Fnatic,2,Team Dignitas,0,2,250000,16
+2014,Cologne 2014,CS:GO,Semifinal,Ninjas in Pyjamas,2,Team LDLC.com,1,1,250000,16
+2014,Cologne 2014,CS:GO,Final,Ninjas in Pyjamas,2,Fnatic,1,1,250000,16
+2014,Jonkoping 2014,CS:GO,Quarterfinal,HellRaisers,0,Ninjas in Pyjamas,2,2,250000,16
+2014,Jonkoping 2014,CS:GO,Quarterfinal,Virtus.pro,2,PENTA Sports,0,2,250000,16
+2014,Jonkoping 2014,CS:GO,Quarterfinal,Team LDLC.com,2,Fnatic,1,1,250000,16
+2014,Jonkoping 2014,CS:GO,Quarterfinal,Natus Vincere,2,Team Dignitas,0,2,250000,16
+2014,Jonkoping 2014,CS:GO,Semifinal,Ninjas in Pyjamas,2,Virtus.pro,0,2,250000,16
+2014,Jonkoping 2014,CS:GO,Semifinal,Team LDLC.com,2,Natus Vincere,0,2,250000,16
+2014,Jonkoping 2014,CS:GO,Final,Team LDLC.com,2,Ninjas in Pyjamas,1,1,250000,16
+2015,Katowice 2015,CS:GO,Quarterfinal,Fnatic,2,PENTA Sports,0,2,250000,16
+2015,Katowice 2015,CS:GO,Quarterfinal,Virtus.pro,2,Keyd Stars,1,1,250000,16
+2015,Katowice 2015,CS:GO,Quarterfinal,Team EnVyUs,2,Natus Vincere,1,1,250000,16
+2015,Katowice 2015,CS:GO,Quarterfinal,Ninjas in Pyjamas,2,Team SoloMid,1,1,250000,16
+2015,Katowice 2015,CS:GO,Semifinal,Fnatic,2,Virtus.pro,0,2,250000,16
+2015,Katowice 2015,CS:GO,Semifinal,Ninjas in Pyjamas,2,Team EnVyUs,0,2,250000,16
+2015,Katowice 2015,CS:GO,Final,Fnatic,2,Ninjas in Pyjamas,1,1,250000,16
+2015,Cologne 2015,CS:GO,Quarterfinal,Team EnVyUs,2,Natus Vincere,0,2,250000,16
+2015,Cologne 2015,CS:GO,Quarterfinal,Team SoloMid,2,Team Kinguin,0,2,250000,16
+2015,Cologne 2015,CS:GO,Quarterfinal,Virtus.pro,2,Ninjas in Pyjamas,0,2,250000,16
+2015,Cologne 2015,CS:GO,Quarterfinal,Fnatic,2,Luminosity Gaming,0,2,250000,16
+2015,Cologne 2015,CS:GO,Semifinal,Team EnVyUs,2,Team SoloMid,1,1,250000,16
+2015,Cologne 2015,CS:GO,Semifinal,Fnatic,2,Virtus.pro,1,1,250000,16
+2015,Cologne 2015,CS:GO,Final,Fnatic,2,Team EnVyUs,0,2,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Quarterfinal,Team EnVyUs,2,Fnatic,1,1,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Quarterfinal,G2 Esports,2,Virtus.pro,0,2,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Quarterfinal,Ninjas in Pyjamas,2,Team SoloMid,0,2,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Quarterfinal,Natus Vincere,2,Luminosity Gaming,0,2,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Semifinal,Team EnVyUs,2,G2 Esports,1,1,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Semifinal,Natus Vincere,2,Ninjas in Pyjamas,0,2,250000,16
+2015,Cluj-Napoca 2015,CS:GO,Final,Team EnVyUs,2,Natus Vincere,0,2,250000,16
+2016,Columbus 2016,CS:GO,Quarterfinal,Natus Vincere,2,Ninjas in Pyjamas,0,2,1000000,16
+2016,Columbus 2016,CS:GO,Quarterfinal,Astralis,2,Fnatic,0,2,1000000,16
+2016,Columbus 2016,CS:GO,Quarterfinal,Team Liquid,2,Counter Logic Gaming,0,2,1000000,16
+2016,Columbus 2016,CS:GO,Quarterfinal,Luminosity Gaming,2,Virtus.pro,1,1,1000000,16
+2016,Columbus 2016,CS:GO,Semifinal,Natus Vincere,2,Astralis,0,2,1000000,16
+2016,Columbus 2016,CS:GO,Semifinal,Luminosity Gaming,2,Team Liquid,0,2,1000000,16
+2016,Columbus 2016,CS:GO,Final,Luminosity Gaming,2,Natus Vincere,0,2,1000000,16
+2016,Cologne 2016,CS:GO,Quarterfinal,Virtus.pro,2,Astralis,0,2,1000000,16
+2016,Cologne 2016,CS:GO,Quarterfinal,SK Gaming,2,FlipSid3 Tactics,0,2,1000000,16
+2016,Cologne 2016,CS:GO,Quarterfinal,Team Liquid,2,Natus Vincere,1,1,1000000,16
+2016,Cologne 2016,CS:GO,Quarterfinal,Fnatic,2,Gambit Gaming,0,2,1000000,16
+2016,Cologne 2016,CS:GO,Semifinal,SK Gaming,2,Virtus.pro,1,1,1000000,16
+2016,Cologne 2016,CS:GO,Semifinal,Team Liquid,2,Fnatic,0,2,1000000,16
+2016,Cologne 2016,CS:GO,Final,SK Gaming,2,Team Liquid,0,2,1000000,16
+2017,Atlanta 2017,CS:GO,Quarterfinal,Astralis,2,Natus Vincere,1,1,1000000,16
+2017,Atlanta 2017,CS:GO,Quarterfinal,Fnatic,2,Gambit Gaming,1,1,1000000,16
+2017,Atlanta 2017,CS:GO,Quarterfinal,Virtus.pro,2,North,1,1,1000000,16
+2017,Atlanta 2017,CS:GO,Quarterfinal,SK Gaming,2,FaZe Clan,1,1,1000000,16
+2017,Atlanta 2017,CS:GO,Semifinal,Astralis,2,Fnatic,0,2,1000000,16
+2017,Atlanta 2017,CS:GO,Semifinal,Virtus.pro,2,SK Gaming,0,2,1000000,16
+2017,Atlanta 2017,CS:GO,Final,Astralis,2,Virtus.pro,1,1,1000000,16
+2017,Krakow 2017,CS:GO,Quarterfinal,Gambit Esports,2,Fnatic,0,2,1000000,16
+2017,Krakow 2017,CS:GO,Quarterfinal,Astralis,2,SK Gaming,0,2,1000000,16
+2017,Krakow 2017,CS:GO,Quarterfinal,Immortals,2,BIG,1,1,1000000,16
+2017,Krakow 2017,CS:GO,Quarterfinal,Virtus.pro,2,North,0,2,1000000,16
+2017,Krakow 2017,CS:GO,Semifinal,Gambit Esports,2,Astralis,1,1,1000000,16
+2017,Krakow 2017,CS:GO,Semifinal,Immortals,2,Virtus.pro,0,2,1000000,16
+2017,Krakow 2017,CS:GO,Final,Gambit Esports,2,Immortals,1,1,1000000,16
+2018,Boston 2018,CS:GO,Quarterfinal,FaZe Clan,2,mousesports,0,2,1000000,24
+2018,Boston 2018,CS:GO,Quarterfinal,Natus Vincere,2,Quantum Bellator Fire,0,2,1000000,24
+2018,Boston 2018,CS:GO,Quarterfinal,Cloud9,2,G2 Esports,0,2,1000000,24
+2018,Boston 2018,CS:GO,Quarterfinal,SK Gaming,2,Fnatic,1,1,1000000,24
+2018,Boston 2018,CS:GO,Semifinal,FaZe Clan,2,Natus Vincere,0,2,1000000,24
+2018,Boston 2018,CS:GO,Semifinal,Cloud9,2,SK Gaming,1,1,1000000,24
+2018,Boston 2018,CS:GO,Final,Cloud9,2,FaZe Clan,1,1,1000000,24
+2018,London 2018,CS:GO,Quarterfinal,Natus Vincere,2,BIG,0,2,1000000,24
+2018,London 2018,CS:GO,Quarterfinal,MIBR,2,compLexity Gaming,0,2,1000000,24
+2018,London 2018,CS:GO,Quarterfinal,Team Liquid,2,HellRaisers,1,1,1000000,24
+2018,London 2018,CS:GO,Quarterfinal,Astralis,2,FaZe Clan,0,2,1000000,24
+2018,London 2018,CS:GO,Semifinal,Natus Vincere,2,MIBR,0,2,1000000,24
+2018,London 2018,CS:GO,Semifinal,Astralis,2,Team Liquid,0,2,1000000,24
+2018,London 2018,CS:GO,Final,Astralis,2,Natus Vincere,0,2,1000000,24
+2019,Katowice 2019,CS:GO,Quarterfinal,Natus Vincere,0,FaZe Clan,2,2,1000000,24
+2019,Katowice 2019,CS:GO,Quarterfinal,Team Liquid,0,ENCE,2,2,1000000,24
+2019,Katowice 2019,CS:GO,Quarterfinal,MIBR,2,Renegades,0,2,1000000,24
+2019,Katowice 2019,CS:GO,Quarterfinal,Astralis,2,Ninjas in Pyjamas,0,2,1000000,24
+2019,Katowice 2019,CS:GO,Semifinal,Natus Vincere,1,ENCE,2,1,1000000,24
+2019,Katowice 2019,CS:GO,Semifinal,MIBR,0,Astralis,2,2,1000000,24
+2019,Katowice 2019,CS:GO,Final,ENCE,0,Astralis,2,2,1000000,24
+2019,Berlin 2019,CS:GO,Quarterfinal,Renegades,2,ENCE,0,2,1000000,24
+2019,Berlin 2019,CS:GO,Quarterfinal,AVANGAR,2,Team Vitality,1,1,1000000,24
+2019,Berlin 2019,CS:GO,Quarterfinal,NRG Esports,2,Natus Vincere,0,2,1000000,24
+2019,Berlin 2019,CS:GO,Quarterfinal,Astralis,2,Team Liquid,0,2,1000000,24
+2019,Berlin 2019,CS:GO,Semifinal,AVANGAR,2,Renegades,0,2,1000000,24
+2019,Berlin 2019,CS:GO,Semifinal,Astralis,2,NRG Esports,0,2,1000000,24
+2019,Berlin 2019,CS:GO,Final,Astralis,2,AVANGAR,0,2,1000000,24
+2021,Stockholm 2021,CS:GO,Quarterfinal,Heroic,2,Virtus.pro,1,1,2000000,24
+2021,Stockholm 2021,CS:GO,Quarterfinal,G2 Esports,2,Ninjas in Pyjamas,0,2,2000000,24
+2021,Stockholm 2021,CS:GO,Quarterfinal,Gambit Esports,2,FURIA Esports,0,2,2000000,24
+2021,Stockholm 2021,CS:GO,Quarterfinal,Natus Vincere,2,Team Vitality,0,2,2000000,24
+2021,Stockholm 2021,CS:GO,Semifinal,G2 Esports,2,Heroic,1,1,2000000,24
+2021,Stockholm 2021,CS:GO,Semifinal,Natus Vincere,2,Gambit Esports,0,2,2000000,24
+2021,Stockholm 2021,CS:GO,Final,Natus Vincere,2,G2 Esports,0,2,2000000,24
+2022,Antwerp 2022,CS:GO,Quarterfinal,FaZe Clan,2,Ninjas in Pyjamas,1,1,1000000,24
+2022,Antwerp 2022,CS:GO,Quarterfinal,Team Spirit,2,FURIA Esports,0,2,1000000,24
+2022,Antwerp 2022,CS:GO,Quarterfinal,ENCE,2,Copenhagen Flames,0,2,1000000,24
+2022,Antwerp 2022,CS:GO,Quarterfinal,Natus Vincere,2,Heroic,1,1,1000000,24
+2022,Antwerp 2022,CS:GO,Semifinal,FaZe Clan,2,Team Spirit,0,2,1000000,24
+2022,Antwerp 2022,CS:GO,Semifinal,Natus Vincere,2,ENCE,0,2,1000000,24
+2022,Antwerp 2022,CS:GO,Final,FaZe Clan,2,Natus Vincere,0,2,1000000,24
+2022,Rio 2022,CS:GO,Quarterfinal,Cloud9,1,MOUZ,2,1,1250000,24
+2022,Rio 2022,CS:GO,Quarterfinal,Fnatic,0,Outsiders,2,2,1250000,24
+2022,Rio 2022,CS:GO,Quarterfinal,Heroic,2,Team Spirit,0,2,1250000,24
+2022,Rio 2022,CS:GO,Quarterfinal,FURIA Esports,2,Natus Vincere,1,1,1250000,24
+2022,Rio 2022,CS:GO,Semifinal,Outsiders,2,MOUZ,1,1,1250000,24
+2022,Rio 2022,CS:GO,Semifinal,Heroic,2,FURIA Esports,1,1,1250000,24
+2022,Rio 2022,CS:GO,Final,Outsiders,2,Heroic,0,2,1250000,24
+2023,Paris 2023,CS:GO,Quarterfinal,Heroic,2,FaZe Clan,1,1,1250000,24
+2023,Paris 2023,CS:GO,Quarterfinal,GamerLegion,2,Monte,0,2,1250000,24
+2023,Paris 2023,CS:GO,Quarterfinal,Apeks,2,Team Liquid,0,2,1250000,24
+2023,Paris 2023,CS:GO,Quarterfinal,Team Vitality,2,Into The Breach,0,2,1250000,24
+2023,Paris 2023,CS:GO,Semifinal,GamerLegion,2,Heroic,1,1,1250000,24
+2023,Paris 2023,CS:GO,Semifinal,Team Vitality,2,Apeks,0,2,1250000,24
+2023,Paris 2023,CS:GO,Final,Team Vitality,2,GamerLegion,0,2,1250000,24
+2024,Copenhagen 2024,CS2,Quarterfinal,Team Spirit,1,FaZe Clan,2,1,1250000,24
+2024,Copenhagen 2024,CS2,Quarterfinal,Team Vitality,2,Cloud9,0,2,1250000,24
+2024,Copenhagen 2024,CS2,Quarterfinal,Eternal Fire,0,Natus Vincere,2,2,1250000,24
+2024,Copenhagen 2024,CS2,Quarterfinal,G2 Esports,2,MOUZ,0,2,1250000,24
+2024,Copenhagen 2024,CS2,Semifinal,FaZe Clan,2,Team Vitality,1,1,1250000,24
+2024,Copenhagen 2024,CS2,Semifinal,Natus Vincere,2,G2 Esports,1,1,1250000,24
+2024,Copenhagen 2024,CS2,Final,Natus Vincere,2,FaZe Clan,1,1,1250000,24
+2024,Shanghai 2024,CS2,Quarterfinal,The MongolZ,0,MOUZ,2,2,1250000,24
+2024,Shanghai 2024,CS2,Quarterfinal,Team Spirit,2,Team Liquid,0,2,1250000,24
+2024,Shanghai 2024,CS2,Quarterfinal,G2 Esports,2,HEROIC,1,1,1250000,24
+2024,Shanghai 2024,CS2,Quarterfinal,FaZe Clan,2,Team Vitality,1,1,1250000,24
+2024,Shanghai 2024,CS2,Semifinal,MOUZ,1,Team Spirit,2,1,1250000,24
+2024,Shanghai 2024,CS2,Semifinal,FaZe Clan,2,G2 Esports,0,2,1250000,24
+2024,Shanghai 2024,CS2,Final,Team Spirit,2,FaZe Clan,1,1,1250000,24
+2025,Austin 2025,CS2,Quarterfinal,Team Spirit,1,MOUZ,2,1,1250000,32
+2025,Austin 2025,CS2,Quarterfinal,FURIA Esports,1,paiN Gaming,2,1,1250000,32
+2025,Austin 2025,CS2,Quarterfinal,Natus Vincere,0,Team Vitality,2,2,1250000,32
+2025,Austin 2025,CS2,Quarterfinal,FaZe Clan,0,The MongolZ,2,2,1250000,32
+2025,Austin 2025,CS2,Semifinal,MOUZ,1,Team Vitality,2,1,1250000,32
+2025,Austin 2025,CS2,Semifinal,paiN Gaming,0,The MongolZ,2,2,1250000,32
+2025,Austin 2025,CS2,Final,Team Vitality,2,The MongolZ,1,1,1250000,32
+2025,Budapest 2025,CS2,Quarterfinal,Team Spirit,2,Team Falcons,0,2,1250000,32
+2025,Budapest 2025,CS2,Quarterfinal,Team Vitality,2,The MongolZ,0,2,1250000,32
+2025,Budapest 2025,CS2,Quarterfinal,MOUZ,0,FaZe Clan,2,2,1250000,32
+2025,Budapest 2025,CS2,Quarterfinal,FURIA Esports,1,Natus Vincere,2,1,1250000,32
+2025,Budapest 2025,CS2,Semifinal,Team Vitality,2,Team Spirit,0,2,1250000,32
+2025,Budapest 2025,CS2,Semifinal,FaZe Clan,2,Natus Vincere,1,1,1250000,32
+2025,Budapest 2025,CS2,Final,Team Vitality,3,FaZe Clan,1,2,1250000,32
+2026,Cologne 2026,CS2,Quarterfinal,Aurora,2,BetBoom,0,2,1250000,32
+2026,Cologne 2026,CS2,Quarterfinal,9z,1,FURIA Esports,2,1,1250000,32
+2026,Cologne 2026,CS2,Quarterfinal,G2 Esports,1,Team Spirit,2,1,1250000,32
+2026,Cologne 2026,CS2,Quarterfinal,Team Falcons,2,Team Vitality,1,1,1250000,32
+2026,Cologne 2026,CS2,Semifinal,Aurora,0,FURIA Esports,2,2,1250000,32
+2026,Cologne 2026,CS2,Semifinal,Team Spirit,1,Team Falcons,2,1,1250000,32
+2026,Cologne 2026,CS2,Final,Team Falcons,3,FURIA Esports,0,3,1250000,32

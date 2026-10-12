@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}APEX{% endblock %}</title>
+  <style>
+    :root {
+      --bg: #0f131a;
+      --panel: #161b24;
+      --line: #262d3a;
+      --text: #e8ebf0;
+      --muted: #8a93a3;
+      --peach: #ffba8a;
+      --green: #1fa67a;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .topbar { display: flex; align-items: center; gap: 2rem; padding: .9rem 1.5rem;
+              border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--text); }
+    .brand strong { display: block; font-size: .95rem; letter-spacing: .04em; }
+    .brand small { display: block; font-size: .6rem; letter-spacing: .12em; color: var(--muted); }
+    .btn-export { margin-left: auto; background: var(--green); color: #fff; border: 0; border-radius: 6px;
+                  padding: .55rem 1rem; font-size: .72rem; font-weight: 700; letter-spacing: .05em; cursor: pointer; }
+    @media print { .topbar, .sidebar { display: none; } }
+    @media (max-width: 720px) { .topbar { flex-wrap: wrap; gap: .8rem; } }
+  </style>
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{% url 'dashboard' %}">
+      <svg width="30" height="28" viewBox="0 0 30 28" aria-hidden="true">
+        <polygon points="15,1 29,27 1,27" fill="#e8721c"/>
+        <rect x="8" y="16" width="4" height="11" fill="#17a77a"/>
+        <rect x="14" y="11" width="4" height="16" fill="#14a9c4"/>
+        <polyline points="4,24 13,16 20,12 27,3" fill="none" stroke="#fff" stroke-width="1.5"/>
+      </svg>
+      <span><strong>APEX | INTELLIGENCE HUB</strong><small>CAPITAL &amp; INTELLIGENCE</small></span>
+    </a>
+    <button class="btn-export" onclick="window.print()">EXPORTAR REPORTE</button>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <script src="{% static 'js/chart.umd.min.js' %}"></script>
+  <script src="{% static 'js/chartjs-chart-matrix.min.js' %}"></script>
+  <script src="{% static 'js/chartjs-chart-treemap.min.js' %}"></script>
+  <script src="{% static 'js/chartjs-chart-boxplot.umd.min.js' %}"></script>
+  {% block body_extra %}{% endblock %}
+</body>
+</html>
